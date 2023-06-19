@@ -1,0 +1,27 @@
+{% load static %}
+<!-- NavBar Template -->
+<header>
+    <a class="logo" href="{% url 'home' %}"><h1>Cafe' Espresso</h1></a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="button">
+        <a class="cta" href="#">Log in</a>
+        <a class="cta" href="#">Join us!</a>
+    </div>
+    <p class="menu cta">Menu</p>
+</header>
+<div class="overlay">
+    <a class="close">&times;</a>
+    <div class="overlay__content">
+        <a href="#">Log in</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+    </div>
+</div>
+<script src="{% static 'js/mobile.js' %}"></script>

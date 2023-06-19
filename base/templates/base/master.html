@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon"/>
+    <title>Cafe' Espresso</title>
+    <style>
+        /* body {
+            background-image: url("{% static 'images/bg.jpg' %}");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%
+        } */
+    </style>
+</head>
+<body>
+    {% include 'base/navbar.html' %}
+
+    {% block content %}
+        <!-- MAIN BLOCK -->
+    {% endblock %}
+
+    {% include 'base/footer.html' %}
+</body>
+</html>
